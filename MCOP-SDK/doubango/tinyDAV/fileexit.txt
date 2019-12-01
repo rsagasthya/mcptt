@@ -1,0 +1,358 @@
+Microsoft (R) COFF/PE Dumper Version 10.00.30319.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file tdav.obj
+
+File Type: COFF OBJECT
+
+COFF SYMBOL TABLE
+000 00AA766F ABS    notype       Static       | @comp.id
+001 00000001 ABS    notype       Static       | @feat.00
+002 00000000 SECT1  notype       Static       | .drectve
+    Section length  132, #relocs    0, #linenums    0, checksum        0
+    Relocation CRC 00000000
+005 00000000 SECT2  notype       Static       | .debug$S
+    Section length 1002C, #relocs   94, #linenums    0, checksum        0
+    Relocation CRC F18C5C41
+008 00000000 SECT3  notype       Static       | .rdata
+    Section length    8, #relocs    0, #linenums    0, checksum 6F5370FE, selection    2 (pick any)
+    Relocation CRC 00000000
+00B 00000000 SECT3  notype       External     | ??_C@_07PFIOFAGI@sha?9512?$AA@ (`string')
+00C 00000000 SECT4  notype       Static       | .rdata
+    Section length    8, #relocs    0, #linenums    0, checksum 91E1259F, selection    2 (pick any)
+    Relocation CRC 00000000
+00F 00000000 SECT4  notype       External     | ??_C@_07LDMAFAJ@sha?9256?$AA@ (`string')
+010 00000000 SECT5  notype       Static       | .rdata
+    Section length    6, #relocs    0, #linenums    0, checksum 51A60184, selection    2 (pick any)
+    Relocation CRC 00000000
+013 00000000 SECT5  notype       External     | ??_C@_05BPJLFPNI@sha?91?$AA@ (`string')
+014 00000000 SECT6  notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 24A38E94, selection    2 (pick any)
+    Relocation CRC 00000000
+017 00000000 SECT6  notype       External     | ??_C@_03PKBIKOHH@md5?$AA@ (`string')
+018 00000000 SECT7  notype       Static       | .rdata
+    Section length    8, #relocs    0, #linenums    0, checksum BC8D0038, selection    2 (pick any)
+    Relocation CRC 00000000
+01B 00000000 SECT7  notype       External     | ??_C@_07CGFACAKO@passive?$AA@ (`string')
+01C 00000000 SECT8  notype       Static       | .rdata
+    Section length    7, #relocs    0, #linenums    0, checksum A12B4F23, selection    2 (pick any)
+    Relocation CRC 00000000
+01F 00000000 SECT8  notype       External     | ??_C@_06MDLIGPKC@active?$AA@ (`string')
+020 00000000 SECT9  notype       Static       | .rdata
+    Section length    8, #relocs    0, #linenums    0, checksum 1E41351F, selection    2 (pick any)
+    Relocation CRC 00000000
+023 00000000 SECT9  notype       External     | ??_C@_07IEJMBFIJ@actpass?$AA@ (`string')
+024 00000000 SECTA  notype       Static       | .rdata
+    Section length    8, #relocs    0, #linenums    0, checksum 4FD0FDD4, selection    2 (pick any)
+    Relocation CRC 00000000
+027 00000000 SECTA  notype       External     | ??_C@_07NFANNNEC@UNKNOWN?$AA@ (`string')
+028 00000000 SECTB  notype       Static       | .bss
+    Section length  420, #relocs    0, #linenums    0, checksum        0
+    Relocation CRC 00000000
+02B 00000000 SECTB  notype       Static       | ___b_initialized
+02C 00000004 SECTB  notype       Static       | ___b_ipsec_supported
+02D 00000008 SECTB  notype       Static       | ___codec_plugins_all
+02E 00000000 SECTC  notype       Static       | .rdata
+    Section length  658, #relocs    0, #linenums    0, checksum C52F1C9A
+    Relocation CRC 00000000
+031 00000000 SECTC  notype       Static       | ___codec_plugins_all_count
+032 00000404 SECTB  notype       Static       | ___dll_plugin_wasapi
+033 00000408 SECTB  notype       Static       | ___dll_plugin_dshow
+034 0000040C SECTB  notype       Static       | ___dll_plugin_mf
+035 00000410 SECTB  notype       Static       | ___dll_plugin_dd
+036 00000414 SECTB  notype       Static       | ___dll_plugin_cuda
+037 00000418 SECTB  notype       Static       | ___dll_plugin_audio_dsp
+038 0000041C SECTB  notype       Static       | ___dll_plugin_ipsec_wfp
+039 00000000 SECTD  notype       Static       | .data
+    Section length   24, #relocs    9, #linenums    0, checksum        0
+    Relocation CRC 9FFBFA9B
+03C 00000000 SECTD  notype       Static       | _TNET_DTLS_SETUP_NAMES
+03D 00000010 SECTD  notype       Static       | _TNET_DTLS_HASH_NAMES
+03E 00000008 SECTC  notype       Static       | _MaxMBPS
+03F 00000048 SECTC  notype       Static       | _MaxFS
+040 00000088 SECTC  notype       Static       | _MaxDpbMbs
+041 000000C8 SECTC  notype       Static       | _MaxBR
+042 00000108 SECTC  notype       Static       | _MaxCPB
+043 00000148 SECTC  notype       Static       | _H264_LEVEL_TO_ZERO_BASED_INDEX
+044 00000548 SECTC  notype       Static       | _tdav_codec_h264_common_level_sizes
+045 00000004 SECTC  notype       Static       | ?__tdav_codec_h264_common_level_sizes_count@?1??tdav_codec_h264_common_level_from_size@@9@9 (`tdav_codec_h264_common_level_from_size'::`2'::__tdav_codec_h264_common_level_sizes_count)
+046 00000544 SECTC  notype       Static       | ?__codec_plugins_all_count@?1??_tdav_codec_plugins_collect@@9@9 (`_tdav_codec_plugins_collect'::`2'::__codec_plugins_all_count)
+047 00000000 SECTE  notype       Static       | .text
+    Section length  A76, #relocs  124, #linenums    0, checksum 9656476B, selection    1 (pick no duplicates)
+    Relocation CRC 7F4B4F36
+04A 00000000 SECTF  notype       Static       | .debug$S
+    Section length  A14, #relocs   C7, #linenums    0, checksum        0, selection    5 (pick associative Section 0xE)
+    Relocation CRC D43985B0
+04D 00000000 SECTE  notype ()    External     | _tdav_init
+04E 00000A6C SECTE  notype       Static       | $LN27
+04F 00000A60 SECTE  notype       Static       | $LN28
+050 00000A58 SECTE  notype       Static       | $LN29
+051 00000000 UNDEF  notype       External     | __imp__tmedia_jitterbuffer_plugin_register
+052 00000000 UNDEF  notype       External     | _tdav_speex_jitterbuffer_plugin_def_t
+053 00000000 UNDEF  notype       External     | __imp__tmedia_resampler_plugin_register
+054 00000000 UNDEF  notype       External     | _tdav_speex_resampler_plugin_def_t
+055 00000000 UNDEF  notype       External     | _tdav_speex_denoise_plugin_def_t
+056 00000000 UNDEF  notype       External     | __imp__tmedia_denoise_plugin_register
+057 00000000 UNDEF  notype       External     | _tdav_webrtc_denoise_plugin_def_t
+058 00000000 UNDEF  notype       External     | _tdav_producer_screencast_gdi_plugin_def_t
+059 00000000 UNDEF  notype       External     | _tdav_producer_dsound_plugin_def_t
+05A 00000000 UNDEF  notype       External     | __imp__tmedia_producer_plugin_register
+05B 00000000 UNDEF  notype       External     | _tdav_producer_t140_plugin_def_t
+05C 00000000 UNDEF  notype       External     | _tdav_consumer_video_gdi_plugin_def_t
+05D 00000000 UNDEF  notype       External     | _tdav_consumer_dsound_plugin_def_t
+05E 00000000 UNDEF  notype       External     | __imp__tmedia_consumer_plugin_register
+05F 00000000 UNDEF  notype       External     | _tdav_consumer_t140_plugin_def_t
+060 00000000 UNDEF  notype       External     | _tdav_converter_video_ffmpeg_plugin_def_t
+061 00000000 UNDEF  notype       External     | __imp__tmedia_converter_video_plugin_register
+062 00000000 UNDEF  notype       External     | _tdav_converter_video_libyuv_plugin_def_t
+063 00000000 UNDEF  notype       External     | _tdav_codec_h264_cisco_base_plugin_def_t
+064 00000000 UNDEF  notype       External     | _tdav_codec_h261_plugin_def_t
+065 00000000 UNDEF  notype       External     | _tdav_codec_h263_plugin_def_t
+066 00000000 UNDEF  notype       External     | _tdav_codec_theora_plugin_def_t
+067 00000000 UNDEF  notype ()    External     | _tdav_codec_ffmpeg_theora_is_supported
+068 00000000 UNDEF  notype       External     | _tdav_codec_h263pp_plugin_def_t
+069 00000000 UNDEF  notype       External     | _tdav_codec_h263p_plugin_def_t
+06A 00000000 UNDEF  notype       External     | _tdav_codec_h264_main_plugin_def_t
+06B 00000000 UNDEF  notype       External     | _tdav_codec_h264_base_plugin_def_t
+06C 00000000 UNDEF  notype       External     | __imp__tmedia_codec_plugin_is_registered_2
+06D 00000000 UNDEF  notype ()    External     | _tdav_codec_ffmpeg_h264_is_supported
+06E 00000000 UNDEF  notype       External     | _tdav_codec_mp4ves_plugin_def_t
+06F 00000000 UNDEF  notype ()    External     | _tdav_codec_ffmpeg_mp4ves_is_supported
+070 00000000 UNDEF  notype       External     | _tdav_codec_vp8_plugin_def_t
+071 00000000 UNDEF  notype       External     | _tdav_codec_dtmf_plugin_def_t
+072 00000000 UNDEF  notype       External     | _tdav_codec_opus_plugin_def_t
+073 00000000 UNDEF  notype       External     | _tdav_codec_speex_uwb_plugin_def_t
+074 00000000 UNDEF  notype       External     | _tdav_codec_speex_wb_plugin_def_t
+075 00000000 UNDEF  notype       External     | _tdav_codec_speex_nb_plugin_def_t
+076 00000000 UNDEF  notype       External     | _tdav_codec_gsm_plugin_def_t
+077 00000000 UNDEF  notype       External     | _tdav_codec_amrwb_be_plugin_def_t
+078 00000000 UNDEF  notype       External     | _tdav_codec_amrwb_oa_plugin_def_t
+079 00000000 UNDEF  notype       External     | _tdav_codec_amrnb_be_plugin_def_t
+07A 00000000 UNDEF  notype       External     | _tdav_codec_amrnb_oa_plugin_def_t
+07B 00000000 UNDEF  notype       External     | _tdav_codec_g722_plugin_def_t
+07C 00000000 UNDEF  notype       External     | _tdav_codec_g711u_plugin_def_t
+07D 00000000 UNDEF  notype       External     | _tdav_codec_g711a_plugin_def_t
+07E 00000000 UNDEF  notype       External     | _tdav_codec_red_plugin_def_t
+07F 00000000 UNDEF  notype       External     | _tdav_codec_bfcp_plugin_def_t
+080 00000000 UNDEF  notype       External     | _tdav_codec_t140_plugin_def_t
+081 00000000 UNDEF  notype       External     | __imp__tmedia_codec_plugin_register
+082 00000000 UNDEF  notype       External     | _tdav_codec_msrp_plugin_def_t
+083 00000000 UNDEF  notype ()    External     | _avcodec_register_all
+084 00000000 UNDEF  notype       External     | _tdav_session_mcptt_plugin_def_t
+085 00000000 UNDEF  notype       External     | _tdav_session_mbcp_plugin_def_t
+086 00000000 UNDEF  notype       External     | _tdav_session_bfcpvideo_plugin_def_t
+087 00000000 UNDEF  notype       External     | _tdav_session_bfcpaudio_plugin_def_t
+088 00000000 UNDEF  notype       External     | _tdav_session_bfcp_plugin_def_t
+089 00000000 UNDEF  notype       External     | _tdav_session_t140_plugin_def_t
+08A 00000000 UNDEF  notype       External     | _tdav_session_msrp_plugin_def_t
+08B 00000000 UNDEF  notype       External     | _tdav_session_video_plugin_def_t
+08C 00000000 UNDEF  notype       External     | _tdav_session_audio_plugin_def_t
+08D 00000000 UNDEF  notype       External     | __imp__tmedia_session_plugin_register
+08E 00000000 UNDEF  notype       External     | __imp__tmedia_session_ghost_plugin_def_t
+08F 00000000 SECT10 notype       Static       | .rdata
+    Section length    D, #relocs    0, #linenums    0, checksum D310E989, selection    2 (pick any)
+    Relocation CRC 00000000
+092 00000000 SECT10 notype       External     | ??_C@_0N@CDJLFAPE@message?1CPIM?$AA@ (`string')
+093 00000000 UNDEF  notype       External     | __imp__tmedia_content_cpim_plugin_def_t
+094 00000000 SECT11 notype       Static       | .rdata
+    Section length   19, #relocs    0, #linenums    0, checksum 85193859, selection    2 (pick any)
+    Relocation CRC 00000000
+097 00000000 SECT11 notype       External     | ??_C@_0BJ@JDCJMJCJ@application?1octet?9stream?$AA@ (`string')
+098 00000000 SECT12 notype       Static       | .rdata
+    Section length    B, #relocs    0, #linenums    0, checksum 4BA3E8FA, selection    2 (pick any)
+    Relocation CRC 00000000
+09B 00000000 SECT12 notype       External     | ??_C@_0L@NPNLKGOJ@text?1plain?$AA@ (`string')
+09C 00000000 UNDEF  notype       External     | __imp__tmedia_content_plugin_register
+09D 00000000 SECT13 notype       Static       | .rdata
+    Section length    A, #relocs    0, #linenums    0, checksum BC665F68, selection    2 (pick any)
+    Relocation CRC 00000000
+0A0 00000000 SECT13 notype       External     | ??_C@_09KABDMIOB@text?1html?$AA@ (`string')
+0A1 00000000 UNDEF  notype       External     | __imp__tmedia_content_dummy_plugin_def_t
+0A2 00000000 SECT14 notype       Static       | .rdata
+    Section length   30, #relocs    0, #linenums    0, checksum 212240D2, selection    2 (pick any)
+    Relocation CRC 00000000
+0A5 00000000 SECT14 notype       External     | ??_C@_0DA@CMFFAMLI@?$CKINFO?3?5Windows?5stand?9alone?5plugi@ (`string')
+0A6 00000000 UNDEF  notype       External     | __imp__tsk_free
+0A7 00000000 UNDEF  notype       External     | __imp__tipsec_plugin_register_file
+0A8 00000000 SECT15 notype       Static       | .rdata
+    Section length   1B, #relocs    0, #linenums    0, checksum  7E7984F, selection    2 (pick any)
+    Relocation CRC 00000000
+0AB 00000000 SECT15 notype       External     | ??_C@_0BL@OCGCDFAD@?$CFs?1pluginWinIPSecVista?4dll?$AA@ (`string')
+0AC 00000000 SECT16 notype       Static       | .rdata
+    Section length   19, #relocs    0, #linenums    0, checksum 175CB8A8, selection    2 (pick any)
+    Relocation CRC 00000000
+0AF 00000000 SECT16 notype       External     | ??_C@_0BJ@BGMEJNI@?$CFs?1pluginWinAudioDSP?4dll?$AA@ (`string')
+0B0 00000000 UNDEF  notype ()    External     | _tdav_win32_is_winvista_or_later
+0B1 00000000 SECT17 notype       Static       | .rdata
+    Section length   18, #relocs    0, #linenums    0, checksum F27F9D41, selection    2 (pick any)
+    Relocation CRC 00000000
+0B4 00000000 SECT17 notype       External     | ??_C@_0BI@KOEBKIJO@?$CFs?1pluginDirectShow?4dll?$AA@ (`string')
+0B5 00000000 UNDEF  notype ()    External     | _tdav_win32_is_winxp_or_later
+0B6 00000000 SECT18 notype       Static       | .rdata
+    Section length   13, #relocs    0, #linenums    0, checksum 71FD046D, selection    2 (pick any)
+    Relocation CRC 00000000
+0B9 00000000 SECT18 notype       External     | ??_C@_0BD@FEAKDCPN@?$CFs?1pluginWinMF?4dll?$AA@ (`string')
+0BA 00000000 UNDEF  notype ()    External     | _tdav_win32_is_win7_or_later
+0BB 00000000 SECT19 notype       Static       | .rdata
+    Section length   13, #relocs    0, #linenums    0, checksum A9ADE0B5, selection    2 (pick any)
+    Relocation CRC 00000000
+0BE 00000000 SECT19 notype       External     | ??_C@_0BD@IMFKNGCF@?$CFs?1pluginWinDD?4dll?$AA@ (`string')
+0BF 00000000 UNDEF  notype ()    External     | _tdav_win32_is_win8_or_later
+0C0 00000000 UNDEF  notype       External     | __imp__tmedia_plugin_register
+0C1 00000000 UNDEF  notype       External     | __imp__tsk_plugin_create
+0C2 00000000 UNDEF  notype       External     | __imp__tsk_plugin_file_exist
+0C3 00000000 UNDEF  notype       External     | __imp__tsk_sprintf
+0C4 00000000 SECT1A notype       Static       | .rdata
+    Section length   12, #relocs    0, #linenums    0, checksum 643CEFBC, selection    2 (pick any)
+    Relocation CRC 00000000
+0C7 00000000 SECT1A notype       External     | ??_C@_0BC@PMNINPAO@?$CFs?1pluginCUDA?4dll?$AA@ (`string')
+0C8 00000000 UNDEF  notype ()    External     | _tdav_get_current_directory_const
+0C9 00000000 UNDEF  notype ()    External     | _tdav_win32_init
+0CA 00000000 UNDEF  notype       External     | __imp__fprintf
+0CB 00000000 UNDEF  notype       External     | __imp____iob_func
+0CC 00000000 UNDEF  notype       External     | __imp__tsk_debug_get_arg_data
+0CD 00000000 SECT1B notype       Static       | .rdata
+    Section length   24, #relocs    0, #linenums    0, checksum 12D16D2C, selection    2 (pick any)
+    Relocation CRC 00000000
+0D0 00000000 SECT1B notype       External     | ??_C@_0CE@IHJICAAG@?$CKINFO?3?5TINYDAV?5already?5initializ@ (`string')
+0D1 00000000 UNDEF  notype       External     | __imp__tsk_debug_get_info_cb
+0D2 00000000 UNDEF  notype       External     | __imp__tsk_debug_get_level
+0D3 00000000 UNDEF  notype ()    External     | @_RTC_CheckStackVars@8
+0D4 00000000 UNDEF  notype ()    External     | __RTC_CheckEsp
+0D5 00000000 SECT1C notype       Static       | .rtc$TMZ
+    Section length    4, #relocs    1, #linenums    0, checksum        0, selection    5 (pick associative Section 0xE)
+    Relocation CRC 4C2E11CC
+0D8 00000000 SECT1C notype       Static       | __RTC_Shutdown.rtc$TMZ
+0D9 00000000 UNDEF  notype ()    External     | __RTC_Shutdown
+0DA 00000000 SECT1D notype       Static       | .rtc$IMZ
+    Section length    4, #relocs    1, #linenums    0, checksum        0, selection    5 (pick associative Section 0xE)
+    Relocation CRC 5D907A9E
+0DD 00000000 SECT1D notype       Static       | __RTC_InitBase.rtc$IMZ
+0DE 00000000 UNDEF  notype ()    External     | __RTC_InitBase
+0DF 00000000 SECT1E notype       Static       | .text
+    Section length  28A, #relocs   33, #linenums    0, checksum 3536EB91, selection    1 (pick no duplicates)
+    Relocation CRC 012EF96F
+0E2 00000000 SECT1F notype       Static       | .debug$S
+    Section length  2D0, #relocs   27, #linenums    0, checksum        0, selection    5 (pick associative Section 0x1E)
+    Relocation CRC 5AF0675E
+0E5 00000000 SECT1E notype ()    External     | _tdav_codec_set_priority
+0E6 00000000 SECT20 notype       Static       | .rdata
+    Section length   3A, #relocs    0, #linenums    0, checksum D769F198, selection    2 (pick any)
+    Relocation CRC 00000000
+0E9 00000000 SECT20 notype       External     | ??_C@_0DK@OOEIGMHL@?$CKINFO?3?5Cannot?5find?5codec?5with?5id@ (`string')
+0EA 00000000 UNDEF  notype       External     | __imp__tmedia_codec_plugin_register_2
+0EB 00000000 UNDEF  notype       External     | __imp__tmedia_codec_plugin_is_registered
+0EC 00000000 SECT21 notype       Static       | .rdata
+    Section length   4C, #relocs    0, #linenums    0, checksum 36F6CD60, selection    2 (pick any)
+    Relocation CRC 00000000
+0EF 00000000 SECT21 notype       External     | ??_C@_0EM@CJDBJDAG@?$CK?$CK?$CKERROR?3?5function?3?5?$CC?$CFs?$CI?$CJ?$CC?5?6file@ (`string')
+0F0 00000000 SECT22 notype       Static       | .rdata
+    Section length   18, #relocs    0, #linenums    0, checksum 73B39F3D, selection    2 (pick any)
+    Relocation CRC 00000000
+0F3 00000000 SECT22 notype       External     | ??_C@_0BI@CPINKKOC@tdav_codec_set_priority?$AA@ (`string')
+0F4 00000000 SECT23 notype       Static       | .rdata
+    Section length   62, #relocs    0, #linenums    0, checksum B9D791C1, selection    2 (pick any)
+    Relocation CRC 00000000
+0F7 00000000 SECT23 notype       External     | ??_C@_0GC@KKNMCIF@c?3?2users?2loli?2desktop?2workspace?2@ (`string')
+0F8 00000000 SECT24 notype       Static       | .data
+    Section length    4, #relocs    0, #linenums    0, checksum 5A9E9C24, selection    2 (pick any)
+    Relocation CRC 00000000
+0FB 00000000 SECT24 notype       External     | ?__LINE__Var@?1??tdav_codec_set_priority@@9@9 (`tdav_codec_set_priority'::`2'::__LINE__Var)
+0FC 00000000 UNDEF  notype       External     | __imp__tsk_debug_get_error_cb
+0FD 00000000 SECT25 notype       Static       | .text
+    Section length   FE, #relocs    D, #linenums    0, checksum 665D18EF, selection    1 (pick no duplicates)
+    Relocation CRC A47C7BEE
+100 00000000 SECT26 notype       Static       | .debug$S
+    Section length  14C, #relocs    9, #linenums    0, checksum        0, selection    5 (pick associative Section 0x25)
+    Relocation CRC AFCEB2C2
+103 00000000 SECT25 notype ()    External     | _tdav_set_codecs
+104 00000000 UNDEF  notype       External     | __imp__tmedia_codec_plugin_unregister_all
+105 00000000 SECT27 notype       Static       | .text
+    Section length   DA, #relocs    B, #linenums    0, checksum 51846877, selection    2 (pick any)
+    Relocation CRC AEB3EFE0
+108 00000000 SECT28 notype       Static       | .debug$S
+    Section length  1B8, #relocs   11, #linenums    0, checksum        0, selection    5 (pick associative Section 0x27)
+    Relocation CRC 9A231F1A
+10B 00000000 SECT27 notype ()    Static       | __tdav_codec_plugins_collect
+10C 000000CC SECT27 notype       Static       | $LN8
+10D 000000D2 SECT27 notype       Static       | $LN7
+10E 000000B4 SECT27 notype       Static       | $LN9
+10F 000000AC SECT27 notype       Static       | $LN10
+110 00000000 UNDEF  notype       External     | __imp__tmedia_codec_plugin_registered_get_all
+111 00000000 SECT29 notype       Static       | .text
+    Section length   48, #relocs    3, #linenums    0, checksum C392170A, selection    2 (pick any)
+    Relocation CRC 10E2F6FE
+114 00000000 SECT2A notype       Static       | .debug$S
+    Section length   E0, #relocs    5, #linenums    0, checksum        0, selection    5 (pick associative Section 0x29)
+    Relocation CRC FE53FF9F
+117 00000000 SECT29 notype ()    Static       | __tdav_codec_plugins_disperse
+118 00000000 UNDEF  notype ()    External     | _memset
+119 00000000 SECT2B notype       Static       | .text
+    Section length   81, #relocs    4, #linenums    0, checksum 9FD5AB26, selection    2 (pick any)
+    Relocation CRC 0966F134
+11C 00000000 SECT2C notype       Static       | .debug$S
+    Section length  128, #relocs    5, #linenums    0, checksum        0, selection    5 (pick associative Section 0x2B)
+    Relocation CRC F4D6FFFE
+11F 00000000 SECT2B notype ()    Static       | __tdav_codec_is_supported
+120 00000000 SECT2D notype       Static       | .text
+    Section length   40, #relocs    2, #linenums    0, checksum 7E9C39C9, selection    1 (pick no duplicates)
+    Relocation CRC 1BAA4F21
+123 00000000 SECT2E notype       Static       | .debug$S
+    Section length   E4, #relocs    5, #linenums    0, checksum        0, selection    5 (pick associative Section 0x2D)
+    Relocation CRC 13AE158C
+126 00000000 SECT2D notype ()    External     | _tdav_codec_is_supported
+127 00000000 SECT2F notype       Static       | .text
+    Section length   48, #relocs    3, #linenums    0, checksum 5113AE6C, selection    1 (pick no duplicates)
+    Relocation CRC B787FE0E
+12A 00000000 SECT30 notype       Static       | .debug$S
+    Section length   F4, #relocs    7, #linenums    0, checksum        0, selection    5 (pick associative Section 0x2F)
+    Relocation CRC F8AA87C3
+12D 00000000 SECT2F notype ()    External     | _tdav_codec_is_enabled
+12E 00000000 SECT31 notype       Static       | .text
+    Section length   2A, #relocs    1, #linenums    0, checksum 59B12A0D, selection    1 (pick no duplicates)
+    Relocation CRC 548034CA
+131 00000000 SECT32 notype       Static       | .debug$S
+    Section length   D4, #relocs    5, #linenums    0, checksum        0, selection    5 (pick associative Section 0x31)
+    Relocation CRC 0CDAAAC0
+134 00000000 SECT31 notype ()    External     | _tdav_ipsec_is_supported
+135 00000000 SECT33 notype       Static       | .text
+    Section length  487, #relocs   83, #linenums    0, checksum 3AE986F5, selection    1 (pick no duplicates)
+    Relocation CRC 84F42EE9
+138 00000000 SECT34 notype       Static       | .debug$S
+    Section length  4A0, #relocs   55, #linenums    0, checksum        0, selection    5 (pick associative Section 0x33)
+    Relocation CRC 44AC65D6
+13B 00000000 SECT33 notype ()    External     | _tdav_deinit
+13C 00000000 UNDEF  notype       External     | __imp__tsk_object_unref
+13D 00000000 UNDEF  notype       External     | __imp__tmedia_jitterbuffer_plugin_unregister
+13E 00000000 UNDEF  notype       External     | __imp__tmedia_resampler_plugin_unregister
+13F 00000000 UNDEF  notype       External     | __imp__tmedia_denoise_plugin_unregister
+140 00000000 UNDEF  notype       External     | _tdav_producer_waveapi_plugin_def_t
+141 00000000 UNDEF  notype       External     | __imp__tmedia_producer_plugin_unregister
+142 00000000 UNDEF  notype       External     | _tdav_consumer_waveapi_plugin_def_t
+143 00000000 UNDEF  notype       External     | __imp__tmedia_consumer_plugin_unregister
+144 00000000 UNDEF  notype       External     | __imp__tmedia_converter_video_plugin_unregister
+145 00000000 UNDEF  notype       External     | __imp__tmedia_session_plugin_unregister
+146 00000000 UNDEF  notype       External     | __imp__tmedia_content_plugin_unregister_all
+147 00000000 UNDEF  notype ()    External     | _tdav_win32_deinit
+148 00000000 SECT35 notype       Static       | .rdata
+    Section length   20, #relocs    0, #linenums    0, checksum 7215D4CF, selection    2 (pick any)
+    Relocation CRC 00000000
+14B 00000000 SECT35 notype       External     | ??_C@_0CA@JEOAHOJN@?$CKINFO?3?5TINYDAV?5not?5initialized?6?$AA@ (`string')
+14C 00000000 SECT36 notype       Static       | .debug$T
+    Section length   84, #relocs    0, #linenums    0, checksum        0
+    Relocation CRC 00000000
+
+String Table Size = 0x1511 bytes
+
+  Summary
+
+         420 .bss
+          28 .data
+       11968 .debug$S
+          84 .debug$T
+         132 .drectve
+         8C4 .rdata
+           4 .rtc$IMZ
+           4 .rtc$TMZ
+        14DA .text

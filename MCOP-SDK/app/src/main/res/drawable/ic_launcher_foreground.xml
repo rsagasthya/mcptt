@@ -1,0 +1,33 @@
+<!--
+  ~
+  ~ *  Copyright (C) 2018, University of the Basque Country (UPV/EHU)
+  ~ *
+  ~ * Contact for licensing options: <licensing-mcpttclient(at)mcopenplatform(dot)com>
+  ~ *
+  ~ * This file is part of MCOP MCPTT Client
+  ~ *
+  ~ * This is free software: you can redistribute it and/or modify it under the terms of
+  ~ * the GNU General Public License as published by the Free Software Foundation, either version 3
+  ~ * of the License, or (at your option) any later version.
+  ~ *
+  ~ * This is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+  ~ * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+  ~ * See the GNU General Public License for more details.
+  ~ *
+  ~ * You should have received a copy of the GNU General Public License along
+  ~ * with this program; if not, write to the Free Software Foundation, Inc.,
+  ~ * 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="108dp"
+        android:height="108dp"
+        android:viewportWidth="332.05957"
+        android:viewportHeight="330.93454">
+    <group android:translateX="72.56478"
+            android:translateY="83.83728">
+        <path
+            android:pathData="M60.63,62.67l-17.26,4.63l3.16,-5.48l-22.58,-13.03l-18.95,32.84l18.95,32.83l22.58,-13.03l-3.16,-5.47l17.26,4.62l-4.63,17.27l-3.16,-5.47l-22.57,13.03l18.96,32.85l37.92,0l0,-26.08l-6.32,0l12.63,-12.64l12.64,12.64l-6.32,0l0,26.08l37.92,0l18.96,-32.85l-22.58,-13.03l-3.16,5.47l-4.62,-17.27l17.26,-4.62l-3.16,5.47l22.57,13.03l0,0l18.96,-32.83l-18.96,-32.84l-22.57,13.03l3.16,5.48l-17.26,-4.63l4.62,-17.26l3.16,5.47l22.58,-13.03l-18.96,-32.85l-37.92,0l0,26.08l6.32,0l-12.64,12.63l-12.63,-12.63l6.32,0l0,-26.08l-37.92,0l-18.96,32.85l22.57,13.03l3.16,-5.47z"
+            android:fillColor="#8aa1ac"/>
+    </group>
+</vector>

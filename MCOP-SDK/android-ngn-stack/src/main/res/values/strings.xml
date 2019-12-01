@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">android-rcs-stack</string>
+    <string name="doubango_revision">900</string>
+    <string name="Start_of_authorization_process">Authorization process start</string>
+    <string name="Refresh_Token">Token refreshed</string>
+    <string name="Error_in_receive_new_token">Error receiving new token</string>
+    <string name="Error_in_new_screen">New screen error</string>
+    <string name="There_are_problems_validating_the_new_token">Error validating new token</string>
+    <string name="Error_in_downloader_the_keys_publics_for_validation">Error downloading public keys for validation</string>
+    <string name="Error_in_refresh_token">Error refreshing token</string>
+    <string name="Failed_to_retrieve_configuration_for">Failed to retrieve configuration</string>
+    <string name="Error_in_authetication">Authetication error</string>
+
+    <string name="Build_date">Build date</string>
+    <string name="Build_version">Build version</string>
+    <string name="Developed_by">Developed by</string>
+    <string name="default_text">default</string>
+    <string name="Based_on">Based on</string>
+
+
+    <string name="doubango_frameword">Doubango framework</string>
+    <string name="Error_Authentication_token">Authentication error: MCPTT ID not received in token</string>
+
+
+</resources>

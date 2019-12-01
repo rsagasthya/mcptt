@@ -1,0 +1,41 @@
+<mcptt-UE-initial-configuration
+        domain="organization.org"
+        xmlns="urn:3gpp:mcptt:mcpttUEinitConfig:1.0">
+  <name xml:lang="en" index="0">Default  Initial UE Conf</name>
+  <mcptt-UE-id>
+        <!--<IMEI-range>
+            <TAC index="string">BigDecimal</TAC>
+            <SNR index="string">BigDecimal</SNR>
+            <SNR-range index="string">BigDecimal</SNR-range>
+        </IMEI-range>-->
+        <Instance-ID-URN>String that define UE config</Instance-ID-URN>
+  </mcptt-UE-id>
+  <Default-user-profile User-ID="urn:uuid:anon-mcptt-user/default.xml" user-profile-index="0" index="0"/>
+  <on-network index="0">
+    <Timers>
+      <T100>0</T100>
+      <T101>0</T101>
+      <T103>0</T103>
+      <T104>0</T104>
+      <T132>0</T132>
+    </Timers>
+    <HPLM PLMN="string">
+      <service>
+        <MCPTT-to-con-ref>string</MCPTT-to-con-ref>
+        <MC-common-core-to-con-ref>string</MC-common-core-to-con-ref>
+        <MC-ID-to-con-ref>string</MC-ID-to-con-ref>
+      </service>
+    </HPLM>
+    <App-Server-Info>
+      <idms-auth-endpoint>http://idms.organization.org/auth</idms-auth-endpoint>
+      <idms-token-endpoint>http://idms.organization.org/token</idms-token-endpoint>
+      <gms>http://gms.organization.org</gms>
+      <cms>http://cms.organization.org</cms>
+      <kms>http://kms.organization.org</kms>
+    </App-Server-Info>
+    <GMS-URI>http://www.test.org/et/ac</GMS-URI>
+    <group-creation-XUI>http://www.my.gov/sed/pectore</group-creation-XUI>
+    <GMS-XCAP-root-URI>http://gms.organization.org/xcap-root/</GMS-XCAP-root-URI>
+    <CMS-XCAP-root-URI>http://cms.organization.org/xcap-root/</CMS-XCAP-root-URI>
+  </on-network>
+</mcptt-UE-initial-configuration>

@@ -1,0 +1,181 @@
+/*
+* Copyright (C) 2015 Mikel Ramos.
+*/
+
+/**@file tdav_session_mcptt.h
+ * @brief The Mission Critical Push-To-Talk (MCPTT) session.
+ * Used for MCPTT floor control plane
+ */
+
+#ifndef TINYDAV_SESSION_MCPTT_H
+#define TINYDAV_SESSION_MCPTT_H
+
+#include "tinydav_config.h"
+
+#include "tinymcptt/packet/tmcptt_mcptt_packet.h"
+#include "tinymcptt/packet/tmcptt_mcptt_packet_taken.h"
+#include "tinymcptt/packet/tmcptt_mcptt_packet_idle.h"
+#include "tinymcptt/packet/tmcptt_mcptt_packet_granted.h"
+#include "tinymcptt/packet/tmcptt_mcptt_packet_request.h"
+#include "tinymcptt/packet/tmcptt_mcptt_packet_release.h"
+#include "tinymcptt/packet/tmcptt_mcptt_packet_ack.h"
+#include "tinymcptt/packet/tmcptt_mcptt_packet_deny.h"
+#include "tinymcptt/packet/tmcptt_mcptt_packet_revoke.h"
+#include "tinymcptt/packet/tmcptt_mcptt_packet_specific.h"
+#include "tinymcptt/packet/tmcptt_mcptt_packet_queue_position_info.h"
+#include "tinymcptt/packet/tmcptt_mcptt_packet_queue_position_request.h"
+#include "tinymcptt/packet/tmcptt_mcptt_packet_preestablished.h"
+#include "tinymcptt/packet/tmcptt_mcptt_packet_ack_preestablished.h"
+#include "tinymcptt/packet/tmcptt_mcptt_packet_connect.h"
+#include "tinymcptt/packet/tmcptt_mcptt_packet_disconnect.h"
+
+
+#if !defined(HAVE_TINYMCPTT) || HAVE_TINYMCPTT
+
+//#include "tnet_transport.h"
+
+#include "tinysip/tsip_uri.h"
+#include "tinymedia/tmedia_session.h"
+#include "tsk_timer.h"
+
+TDAV_BEGIN_DECLS
+
+typedef enum 
+{
+  mcptt_session_type_none,
+  mcptt_session_type_private,
+  mcptt_session_type_group_prearranged,
+  mcptt_session_type_group_chat
+} tdav_session_mcptt_type_t;
+
+typedef enum tdav_mcptt_status_e
+{
+	mcptt_status_start_stop,
+	mcptt_status_no_permission,
+	mcptt_status_pending_request,
+	mcptt_status_permission,
+	mcptt_status_pending_release,
+	mcptt_status_releasing,
+	mcptt_status_queued
+}
+tdav_mcptt_status_t;
+
+typedef struct tdav_session_mcptt_s
+{
+	TMEDIA_DECLARE_SESSION_MCPTT;
+
+	uint32_t priority_local;
+	tsk_bool_t implicit_local;
+	tsk_bool_t granted_local;
+	tmedia_type_t type_session;
+	tsip_uri_t* mcptt_id_local;
+	tsip_uri_t* mcptt_request_uri;
+	tsip_uri_t* mcptt_calling_user_id;
+	tsip_uri_t* mcptt_called_party_id;
+	tsip_uri_t* mcptt_calling_group_id;
+
+	uint32_t priority_remote;
+	tsk_bool_t implicit_remote;
+	tsk_bool_t granted_remote;
+
+	char* remote_ip;
+	uint16_t remote_port;
+
+	char* local_ip;
+	uint16_t local_port;
+
+	tsk_bool_t is_multimedia;
+	char* media_label;
+	uint16_t floorid;
+
+	uint32_t local_ssrc;
+
+	char* local_mcptt_id;
+
+	tsk_bool_t is_broadcast;
+	tsk_bool_t is_emergency;
+	tsk_bool_t is_dual_floor;
+	tsk_bool_t queueing_enabled;
+	tsk_bool_t is_imminent_peril;
+	tdav_session_mcptt_type_t session_type;
+
+	tdav_mcptt_status_t mcptt_status;
+
+	tsk_timer_manager_handle_t *h_timer;
+
+	struct{
+		tsk_timer_id_t id;
+		int64_t timeout;
+	}timer_t100; //Floor release
+
+	struct{
+		tsk_timer_id_t id;
+		int64_t timeout;
+	}timer_t101; //Floor request
+
+	struct{
+		tsk_timer_id_t id;
+		int64_t timeout;
+	}timer_t103; //End of RTP
+
+	struct{
+		tsk_timer_id_t id;
+		int64_t timeout;
+	}timer_t104; //Queue position request
+
+	struct{
+		tsk_timer_id_t id;
+		int64_t timeout;
+	}timer_t132; //Queued granted user action
+
+	struct {
+		uint8_t curr_value;
+		uint8_t max_value;
+	} counter_c100;
+
+	struct {
+		uint8_t curr_value;
+		uint8_t max_value;
+	} counter_c101;
+	
+	struct {
+		uint8_t curr_value;
+		uint8_t max_value;
+	} counter_c104;
+
+	struct tmcptt_manager_s* mcptt_manager;
+	tmedia_session_audio_t* audio_session;
+	tmedia_session_audio_t* multicast_audio_session;
+}
+tdav_session_mcptt_t;
+
+TINYDAV_GEXTERN const tmedia_session_plugin_def_t *tdav_session_mcptt_plugin_def_t;
+
+int tdav_session_mcptt_request_token (tmedia_session_mcptt_t* self, va_list *app);
+int tdav_session_mcptt_release_token (tmedia_session_mcptt_t* self, va_list *app);
+<<<<<<< HEAD
+int tdav_session_mcptt_request_queue_position (tmedia_session_mcptt_t* self, va_list *app);
+
+int tdav_session_mcptt_send_request (tmedia_session_mcptt_t* self, va_list *app);
+int tdav_session_mcptt_send_release (tmedia_session_mcptt_t* self, va_list *app);
+int tdav_session_mcptt_send_ack (tmedia_session_mcptt_t* self, tmcptt_mcptt_packet_type_t type, va_list *app);
+int tdav_session_mcptt_send_queue_position_request (tmedia_session_mcptt_t* self, va_list *app);
+
+uint16_t tdav_session_mcptt_get_floor_indicator(tmedia_session_mcptt_t* self);
+
+int tdav_session_mcptt_process_taken(tdav_session_mcptt_t* mcptt, tmcptt_mcptt_packet_taken_t* taken_msg);
+int tdav_session_mcptt_process_idle(tdav_session_mcptt_t* mcptt, tmcptt_mcptt_packet_idle_t* idle_msg);
+int tdav_session_mcptt_process_granted(tdav_session_mcptt_t* mcptt, tmcptt_mcptt_packet_granted_t* granted_msg);
+int tdav_session_mcptt_process_deny(tdav_session_mcptt_t* mcptt, tmcptt_mcptt_packet_deny_t* deny_msg);
+int tdav_session_mcptt_process_revoke(tdav_session_mcptt_t* mcptt, tmcptt_mcptt_packet_revoke_t* revoke_msg);
+int tdav_session_mcptt_process_queue_position_info(tdav_session_mcptt_t* mcptt, tmcptt_mcptt_packet_queue_position_info_t* queue_position_info_msg);
+=======
+int tdav_session_mcptt_send_taken_ack_accepted (tmedia_session_mcptt_t* self, va_list *app);
+uint16_t tdav_session_mcptt_get_floor_indicator(tmedia_session_mcptt_t* self);
+>>>>>>> 3786611ddac22a4cb96f1767a972e3ad4f4aa13a
+
+TDAV_END_DECLS
+
+#endif /* !defined(HAVE_TINYMCPTT) || HAVE_TINYMCPTT */
+
+#endif /* TINYDAV_SESSION_MCPTT_H */

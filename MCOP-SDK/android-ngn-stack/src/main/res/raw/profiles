@@ -1,0 +1,133 @@
+<Profiles>
+    <NgnSipPrefrences name="TESTA">
+            <DisplayName>TEST A</DisplayName>
+            <IMPI>mcptt-test-A@organization.org</IMPI>
+            <IMPU>sip:mcptt-test-A@organization.org</IMPU>
+            <Password></Password>
+            <IPVersion>ipv4</IPVersion>
+            <IPsecSecAgree>false</IPsecSecAgree>
+            <McpttAnswerMode>true</McpttAnswerMode>
+            <McpttGranted>true</McpttGranted>
+            <McpttId>sip:mcptt_id_test_A@organization.org</McpttId>
+            <McpttClientId>sip:mcptt_id_test_A@organization.org</McpttClientId>
+            <McpttImplicit>true</McpttImplicit>
+            <McpttIsEnableAffiliation>true</McpttIsEnableAffiliation>
+            <McpttNameSpace>true</McpttNameSpace>
+            <McpttPriority>7</McpttPriority>
+            <McpttPrivAnswerMode>false</McpttPrivAnswerMode>
+            <McpttPsiAffiliation>sip:mcptt-server-orig-part.organization.org</McpttPsiAffiliation>
+            <McpttPsiCallGroup>sip:mcptt-server-orig-part.organization.org</McpttPsiCallGroup>
+            <McpttPsiCallPreestablished>sip:mcptt-server-orig-part.organization.org</McpttPsiCallPreestablished>
+            <McpttPsiCallPrivate>sip:mcptt-server-orig-part.organization.org</McpttPsiCallPrivate>
+            <McpttPsiAuthentication>sip:mcptt-server-orig-part.organization.org</McpttPsiAuthentication>
+            <Realm>organization.org</Realm>
+            <PcscfPort>5070</PcscfPort>
+            <PcscfHost>demo.mcopenplatform.org</PcscfHost>
+            <Transport>TCP</Transport>
+        </NgnSipPrefrences>
+    <NgnSipPrefrences name="TESTB">
+        <DisplayName>TEST B</DisplayName>
+        <IMPI>mcptt-test-B@organization.org</IMPI>
+        <IMPU>sip:mcptt-test-B@organization.org</IMPU>
+        <Password></Password>
+        <IPVersion>ipv4</IPVersion>
+        <IPsecSecAgree>false</IPsecSecAgree>
+        <McpttAnswerMode>true</McpttAnswerMode>
+        <McpttGranted>true</McpttGranted>
+        <McpttId>sip:mcptt_id_test_B@organization.org</McpttId>
+        <McpttClientId>sip:mcptt_id_test_B@organization.org</McpttClientId>
+        <McpttImplicit>true</McpttImplicit>
+        <McpttIsEnableAffiliation>true</McpttIsEnableAffiliation>
+        <McpttNameSpace>true</McpttNameSpace>
+        <McpttPriority>7</McpttPriority>
+        <McpttPrivAnswerMode>false</McpttPrivAnswerMode>
+        <McpttPsiAffiliation>sip:mcptt-server-orig-part.organization.org</McpttPsiAffiliation>
+        <McpttPsiCallGroup>sip:mcptt-server-orig-part.organization.org</McpttPsiCallGroup>
+        <McpttPsiCallPreestablished>sip:mcptt-server-orig-part.organization.org</McpttPsiCallPreestablished>
+        <McpttPsiCallPrivate>sip:mcptt-server-orig-part.organization.org</McpttPsiCallPrivate>
+        <McpttPsiAuthentication>sip:mcptt-server-orig-part.organization.org</McpttPsiAuthentication>
+        <Realm>organization.org</Realm>
+        <PcscfHost>demo.mcopenplatform.org</PcscfHost>
+        <PcscfPort>5070</PcscfPort>
+        <Transport>TCP</Transport>
+    </NgnSipPrefrences>
+
+    <NgnSipPrefrences name="TESTC">
+            <DisplayName>TEST C</DisplayName>
+            <IMPI>mcptt-test-C@organization.org</IMPI>
+            <IMPU>sip:mcptt-test-C@organization.org</IMPU>
+            <Password></Password>
+            <IPVersion>ipv4</IPVersion>
+            <IPsecSecAgree>false</IPsecSecAgree>
+            <McpttAnswerMode>true</McpttAnswerMode>
+            <McpttGranted>true</McpttGranted>
+            <McpttId>sip:mcptt_id_test_C@organization.org</McpttId>
+            <McpttClientId>sip:mcptt_id_test_C@organization.org</McpttClientId>
+            <McpttImplicit>true</McpttImplicit>
+            <McpttIsEnableAffiliation>true</McpttIsEnableAffiliation>
+            <McpttNameSpace>true</McpttNameSpace>
+            <McpttPriority>7</McpttPriority>
+            <McpttPrivAnswerMode>false</McpttPrivAnswerMode>
+            <McpttPsiAffiliation>sip:mcptt-server-orig-part.organization.org</McpttPsiAffiliation>
+            <McpttPsiCallGroup>sip:mcptt-server-orig-part.organization.org</McpttPsiCallGroup>
+            <McpttPsiCallPreestablished>sip:mcptt-server-orig-part.organization.org</McpttPsiCallPreestablished>
+            <McpttPsiCallPrivate>sip:mcptt-server-orig-part.organization.org</McpttPsiCallPrivate>
+            <McpttPsiAuthentication>sip:mcptt-server-orig-part.organization.org</McpttPsiAuthentication>
+            <Realm>organization.org</Realm>
+            <PcscfHost>demo.mcopenplatform.org</PcscfHost>
+            <PcscfPort>5070</PcscfPort>
+            <Transport>TCP</Transport>
+    </NgnSipPrefrences>
+    <NgnSipPrefrences name="TESTD">
+        <DisplayName>TEST D</DisplayName>
+        <IMPI>mcptt-test-D@organization.org</IMPI>
+        <IMPU>sip:mcptt-test-D@organization.org</IMPU>
+        <Password></Password>
+        <IPVersion>ipv4</IPVersion>
+        <IPsecSecAgree>false</IPsecSecAgree>
+        <McpttAnswerMode>true</McpttAnswerMode>
+        <McpttGranted>true</McpttGranted>
+        <McpttId>sip:mcptt_id_test_D@organization.org</McpttId>
+        <McpttClientId>sip:mcptt_id_test_D@organization.org</McpttClientId>
+        <McpttImplicit>true</McpttImplicit>
+        <McpttIsEnableAffiliation>true</McpttIsEnableAffiliation>
+        <McpttNameSpace>true</McpttNameSpace>
+        <McpttPriority>7</McpttPriority>
+        <McpttPrivAnswerMode>false</McpttPrivAnswerMode>
+        <McpttPsiAffiliation>sip:mcptt-server-orig-part.organization.org</McpttPsiAffiliation>
+        <McpttPsiCallGroup>sip:mcptt-server-orig-part.organization.org</McpttPsiCallGroup>
+        <McpttPsiCallPreestablished>sip:mcptt-server-orig-part.organization.org</McpttPsiCallPreestablished>
+        <McpttPsiCallPrivate>sip:mcptt-server-orig-part.organization.org</McpttPsiCallPrivate>
+        <McpttPsiAuthentication>sip:mcptt-server-orig-part.organization.org</McpttPsiAuthentication>
+        <Realm>organization.org</Realm>
+        <PcscfHost>demo.mcopenplatform.org</PcscfHost>
+        <PcscfPort>5070</PcscfPort>
+        <Transport>TCP</Transport>
+    </NgnSipPrefrences>
+    <NgnSipPrefrences name="TESTE">
+        <DisplayName>TEST E</DisplayName>
+        <IMPI>mcptt-test-E@organization.org</IMPI>
+        <IMPU>sip:mcptt-test-E@organization.org</IMPU>
+        <Password></Password>
+        <IPVersion>ipv4</IPVersion>
+        <IPsecSecAgree>false</IPsecSecAgree>
+        <McpttAnswerMode>true</McpttAnswerMode>
+        <McpttGranted>true</McpttGranted>
+        <McpttId>sip:mcptt_id_test_E@organization.org</McpttId>
+        <McpttClientId>sip:mcptt_id_test_E@organization.org</McpttClientId>
+        <McpttImplicit>true</McpttImplicit>
+        <McpttIsEnableAffiliation>true</McpttIsEnableAffiliation>
+        <McpttNameSpace>true</McpttNameSpace>
+        <McpttPriority>7</McpttPriority>
+        <McpttPrivAnswerMode>false</McpttPrivAnswerMode>
+        <McpttPsiAffiliation>sip:mcptt-server-orig-part.organization.org</McpttPsiAffiliation>
+        <McpttPsiCallGroup>sip:mcptt-server-orig-part.organization.org</McpttPsiCallGroup>
+        <McpttPsiCallPreestablished>sip:mcptt-server-orig-part.organization.org</McpttPsiCallPreestablished>
+        <McpttPsiCallPrivate>sip:mcptt-server-orig-part.organization.org</McpttPsiCallPrivate>
+        <McpttPsiAuthentication>sip:mcptt-server-orig-part.organization.org</McpttPsiAuthentication>
+        <Realm>organization.org</Realm>
+        <PcscfHost>demo.mcopenplatform.org</PcscfHost>
+        <PcscfPort>5070</PcscfPort>
+        <Transport>TCP</Transport>
+    </NgnSipPrefrences>
+</Profiles>

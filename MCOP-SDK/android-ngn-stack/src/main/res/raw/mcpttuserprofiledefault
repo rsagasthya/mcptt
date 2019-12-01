@@ -1,0 +1,48 @@
+<mcptt-user-profile
+        XUI-URI="urn:uuid:anon-mcptt-user/default.xml"
+        user-profile-index="0"
+        xmlns="urn:3gpp:mcptt:user-profile:1.0">
+  <!-- Name of the user profile -->
+  <Name xml:lang="en">Default Profile</Name>
+
+  <!-- State of this profile, false if disabled, true if can be used -->
+  <Status>true</Status>
+
+  <!-- Own name of the document ?? TS 24.484 Subclause 7.4.2.7 -->
+  <ProfileName xml:lang="string">default-user-profile.xml</ProfileName>
+
+  <!-- This profile is to be selected by default -->
+  <Pre-selected-indication/>
+
+  <Common index="0">
+    <!-- Own user MCPTT ID and DisplayName -->
+    <MCPTTUserID entry-info="UsePreConfigured" index="0">
+      <uri-entry>sip:police_chief@organization.org</uri-entry>
+      <display-name xml:lang="">Police Chief</display-name>
+    </MCPTTUserID>
+
+    <MissionCriticalOrganization>organization.org</MissionCriticalOrganization>
+    <ParticipantType>First Responder (Any text)</ParticipantType>
+  </Common>
+  <OnNetwork index="token">
+
+    <MaxAffiliationsN2>200</MaxAffiliationsN2>
+
+    <!-- User's groups -->
+    <MCPTTGroupInfo xml:lang="en" index="0">
+      <entry entry-info="LocallyDetermined" index="0">
+        <uri-entry>sip:police_heads@organization.org</uri-entry>
+        <display-name xml:lang="string">Police Heads</display-name>
+      </entry>
+    </MCPTTGroupInfo>
+
+    <!-- User's group implicit affiliations -->
+    <ImplicitAffiliations xml:lang="en" index="0">
+      <entry entry-info="DedicatedGroup" index="token">
+        <uri-entry>police_heads@organization.org</uri-entry>
+        <display-name xml:lang="">Police Heads</display-name>
+      </entry>
+    </ImplicitAffiliations>
+
+  </OnNetwork>
+</mcptt-user-profile>

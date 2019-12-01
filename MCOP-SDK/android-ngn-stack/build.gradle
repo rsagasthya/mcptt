@@ -1,0 +1,124 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        minSdkVersion 17
+        targetSdkVersion 28
+
+
+        // replace the below string with your own Google client ID. Make sure this is consistent
+        // with the values used in idp_configs.xml
+        manifestPlaceholders = [
+                'appAuthRedirectScheme': 'com.googleusercontent.apps.YOUR_ID'
+        ]
+    }
+	
+	packagingOptions{
+        doNotStrip "*/armeabi/*.so"
+        doNotStrip "*/armeabi-v7a/*.so"
+        doNotStrip "*/x86/*.so"
+    }
+
+
+
+    buildTypes {
+        release {
+            flavorDimensions "cpuArch"
+                ndk {
+                    abiFilters 'armeabi-v7a', 'x86'
+                }
+            minifyEnabled true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            /**
+             * If LOG_SHOW is true, the logs use all applicationId.
+             */
+            buildConfigField "boolean", "LOG_SHOW", "false"
+            /**
+             * Select for authentication sim
+             * If AUTHENTICATION_SIM is true and the IMS use AKAv2, the authentication IMS is doing in pluging external from MCOP SDK.
+             */
+            buildConfigField "boolean", "AUTHENTICATION_SIM", "true"
+            /**
+             * APP_NAME_PROPIETARY is the User-Agent
+             */
+            buildConfigField "String", "APP_NAME_PROPIETARY", "\"MCOP CLIENT MCPTT1.0\""
+
+        }
+
+        debug {
+            flavorDimensions "cpuArch"
+                ndk {
+                    abiFilters 'armeabi-v7a', 'x86'
+                }
+            minifyEnabled false
+            zipAlignEnabled false
+			buildConfigField "boolean", "LOG_SHOW", "true"
+            buildConfigField "boolean", "AUTHENTICATION_SIM", "true"
+            buildConfigField "String", "APP_NAME_PROPIETARY", "\"MCOP CLIENT MCPTT1.0\""
+        }
+        publishNonDefault true
+		
+
+
+
+
+    }
+
+
+    defaultConfig {
+        // Some other stuff
+        buildConfigField "long", "TIMESTAMP", System.currentTimeMillis() + "L"
+        //ui tests
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+
+    sourceSets {
+        main {
+            manifest.srcFile 'src/main/AndroidManifest.xml'
+            java.srcDirs = ['src/main/java']
+            res.srcDirs = ['src/main/res']
+            assets.srcDirs = ['assets']
+            jniLibs.srcDirs = ['src/main/jnilibs']
+            jni.srcDirs = [] // This prevents the auto generation of Android.mk
+        }
+    }
+	
+	externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+
+            // arguments "-DVAR_NAME=ARG_1 ARG_2"
+        }
+    }
+
+}
+
+
+
+dependencies {
+        //compile files('libs/simple-xml-2.3.4.jar')
+    //compile fileTree(dir: 'libs', include: '*.jar')
+    api('org.simpleframework:simple-xml:2.7.+') {
+        exclude module: 'stax'
+        exclude module: 'stax-api'
+        exclude module: 'xpp3'
+    }
+    api 'com.android.support:appcompat-v7:' + rootProject.supportLibVersion
+    api 'com.google.android.gms:play-services-location:11.6.0'
+    //self configuration
+    api 'net.openid:appauth:0.4.1'
+    // https://mvnrepository.com/artifact/org.bitbucket.b_c/jose4j
+    api 'org.bitbucket.b_c:jose4j:0.5.4'
+    api files('src/main/jnilibs/EwMSPClientLib.jar')
+    // Required -- JUnit 4 framework
+    testImplementation 'junit:junit:4.12'
+    // Optional -- Mockito framework
+    testImplementation 'org.mockito:mockito-core:2.7.22'
+
+}
+
+
